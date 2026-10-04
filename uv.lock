@@ -1,0 +1,23 @@
+version = 1
+revision = 5
+requires-python = ">=3.14"
+
+[[package]]
+name = "coloredstrings"
+version = "3.3.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/77/78/bb43fd52e7dc79a3595a5ad0a3a4c411b61ff04131ddb938285b92060921/coloredstrings-3.3.0.tar.gz", hash = "sha256:aa50e3d1252665636a55794bb676ba22064c3a775cbca42a7af3fc2aeb067f7e", size = 23102, upload-time = "2025-12-14T18:05:05.236Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e3/0f/5c0ae354fc2bbcc851b1764366ab320f664b779a5dfe566f029aa3a2ee3b/coloredstrings-3.3.0-py3-none-any.whl", hash = "sha256:27bfbb2517789b65459b56c9201e739dbb48e26d74f9a17181789a33991cd847", size = 26245, upload-time = "2025-12-14T18:05:04.111Z" },
+]
+
+[[package]]
+name = "webhm"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "coloredstrings" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "coloredstrings", specifier = ">=3.3.0" }]
