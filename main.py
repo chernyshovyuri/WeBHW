@@ -1,5 +1,13 @@
 from coloredstrings import * 
 
-print(red("Hello World"))
-print(green("Hello World"))
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/hello")
+async def hello_world():
+    return {"Hello, world"}
+
+
+
 

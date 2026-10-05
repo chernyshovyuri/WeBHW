@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.15"
 dependencies = [
     "coloredstrings>=3.3.0",
+    "fastapi[all]>=0.142.2",
 ]
 
 [project.scripts]
