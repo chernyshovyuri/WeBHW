@@ -1,13 +1,10 @@
-from coloredstrings import * 
-
+from coloredstrings import *
+import asyncio
 from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/hello")
-async def hello_world():
-    return {"Hello, world"}
 
-
-
-
+@app.get("/")
+def main():
+    return {"message": "Hello, world"}

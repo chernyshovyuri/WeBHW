@@ -1,2 +1,4 @@
+from coloredstrings import *
+
 def main() -> None:
-    print("Hello from webhm!")
+    print(red("Hello from webhm!"))
