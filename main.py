@@ -19,4 +19,3 @@ database = [
 def main():
     return database
 
-
