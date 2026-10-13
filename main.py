@@ -18,4 +18,3 @@ database = [
 @app.get("/database")
 def main():
     return database
-
