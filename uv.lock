@@ -807,6 +807,7 @@ source = { editable = "." }
 dependencies = [
     { name = "coloredstrings" },
     { name = "fastapi", extra = ["all"] },
+    { name = "pydantic" },
     { name = "rich" },
 ]
 
@@ -814,6 +815,7 @@ dependencies = [
 requires-dist = [
     { name = "coloredstrings", specifier = ">=3.3.0" },
     { name = "fastapi", extras = ["all"], specifier = ">=0.142.2" },
+    { name = "pydantic", specifier = ">=2.13.5" },
     { name = "rich", specifier = ">=15.0.0" },
 ]
 
