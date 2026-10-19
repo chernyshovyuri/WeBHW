@@ -12,6 +12,7 @@ dependencies = [
     "fastapi[all]>=0.142.2",
     "pydantic>=2.13.5",
     "rich>=15.0.0",
+    "sqlmodel>=0.0.48",
 ]
 
 [project.scripts]

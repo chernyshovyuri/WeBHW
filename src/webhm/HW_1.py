@@ -106,3 +106,16 @@ def put_book(
             return book
 
     raise HTTPException(status.HTTP_404_NOT_FOUND)
+
+
+@app.delete("/books/{id}")
+def delete_obgect(id: Annotated[int, Path(gt=0)]) -> dict:
+
+    target_book = next((book for book in books if book["id"] == id), None)
+
+    if target_book is None:
+        raise HTTPException(status.HTTP_404_NOT_FOUND)
+
+    books.remove(target_book)
+
+    return target_book
