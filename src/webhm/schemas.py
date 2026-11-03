@@ -52,8 +52,8 @@ class TaskUpdate(BaseModel):
         None, min_length=1, max_length=64, description="Название задачи"
     )
     description: str | None = Field(None, min_length=1, description="Описание задачи")
-    status: Status | None = Field(default=None, description="Статус задачи")
-    priority: Priority | None = Field(default=None, description="Приоритет задачи")
+    status: Status | None = Field(description="Статус задачи")
+    priority: Priority | None = Field(description="Приоритет задачи")
     tag_ids: list[int] | None = Field(None, description="Список тегов")
 
 
