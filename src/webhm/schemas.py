@@ -52,6 +52,11 @@ class TaskUpdate(BaseModel):
         None, min_length=1, max_length=64, description="Название задачи"
     )
     description: str | None = Field(None, min_length=1, description="Описание задачи")
+    # ОБСУДИТЬ С ПРЕПОДАВАТЕЛЕМ: у status и priority нет значения по умолчанию.
+    # Тип | None разрешает передать null, но не разрешает пропустить поле.
+    # Поэтому PATCH только с title возвращает 422: оба поля остаются обязательными.
+    # Обсудить добавление default=None для частичного обновления.
+    # Проверка: tests/test_hw_2.py — test_partial_task_update.
     status: Status | None = Field(description="Статус задачи")
     priority: Priority | None = Field(description="Приоритет задачи")
     tag_ids: list[int] | None = Field(None, description="Список тегов")

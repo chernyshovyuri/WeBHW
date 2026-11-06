@@ -182,6 +182,10 @@ def delete_task_in_project(
         raise HTTPException(status.HTTP_404_NOT_FOUND)
 
 
+# ОБСУДИТЬ С ПРЕПОДАВАТЕЛЕМ: здесь пропущен @ перед app.post(...).
+# Без @ функция ниже не становится обработчиком маршрута,
+# поэтому POST /projects/{project_id}/tasks возвращает 405 вместо создания задачи.
+# Проверка: tests/test_hw_2.py — test_create_task_over_http.
 app.post("/projects/{project_id}/tasks")
 
 
