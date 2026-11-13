@@ -4,32 +4,33 @@
         <title>Музеум</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body style="margin: 0;">
-        <header style="background-color: beige; display: flex; align-items: center; flex-direction: column;">
-            <h1 style="color: blue;">Музей которого нет, и слава богу</h1>
+    <body>
+        <header>
+            <h1>Музей которого нет, и слава богу</h1>
             <img src="../../resurces/i.webp" style="width: 100%; height: 250px; object-fit: cover; object-position: center bottom; display: block;" alt="Фотография Волги"/>
         </header>
 
         <main>
-            <section>
-            <h1 style="color: blue; display: flex; align-items:center; flex-direction: column;">Волга, великая река <span style="color: brown;">России</span></h1>
-            </section>
+            <div>
+            <h1>Волга, великая река <span style="color: brown;">России</span></h1>
+            </div>
 
             <section style="background-color: aqua;">
-                <h2 style="color: color-mix(in lab, color percentage, color percentage); display: flex; align-items: center; flex-direction: column;">Характеристики реки:</h2>
+                <h2>Характеристики реки:</h2>
                 
-                <ul>
-                    <ol>Длина реки составляет 3530 км</ol>
-                    <ol>Площадь водосборного бассейна — 1360 тыс. км</ol>
-                    <br>
-                    <ol>На Волге расположены четыре города-миллионера:
-                        
-                            <ul>Нижний Новгород</ul>
-                            <ul>Казань</ul>
-                            <ul>Самара</ul>
-                            <ul>Волгоград</ul>
-                    </ol>
+                <ul id="menu">
+                    <li>Длина реки составляет 3530 км</li>
+                    <li>Площадь водосборного бассейна — 1360 тыс. км</li>
+                    <li>На Волге расположены четыре города-миллионера:
+                        <ul>                        
+                            <li>Нижний Новгород</li>
+                            <li>Казань</li>
+                            <li>Самара</li>
+                            <li>Волгоград</li>
+                        </ul>
+                    </li>                    
                 </ul>
             
             </section>
@@ -37,7 +38,7 @@
             <section style="background-color: chocolate; display: flex; justify-content: center; align-items: center;">
 
                 <div>
-                    <h2 style="color: color-mix(in lab, color percentage, color percentage); display: flex; align-items: center; flex-direction: column;">Исток реки Волга:</h2>
+                    <h2>Исток реки Волга:</h2>
                     
                         <ul>
                             <li>Географическое положение: родник бьет на высоте около 228–230 метров над уровнем моря.</li>
@@ -51,7 +52,7 @@
                 </div>
 
                 <div>
-                    <h2 style="color: color-mix(in lab, color percentage, color percentage); display: flex; align-items: center; flex-direction: column;">Куда впадает река Волга?:</h2>
+                    <h2>Куда впадает река Волга?:</h2>
                     <ul>
                         <li>Дельта Волги: перед впадением река образует огромную разветвлённую дельту площадью около 19 000 км² с множеством рукавов и протоков.</li>
                         <li>Уровень воды: устье располагается на отметке примерно 28 метров ниже уровня Мирового океана.</li>
@@ -64,22 +65,22 @@
 
             </section>
 
-            <h2 style="color: color-mix(in lab, color percentage, color percentage); background: blue; display: flex; justify-content: center; align-items: center;">Великие строения на реке Волга:</h2>
+            <h2>Великие строения на реке Волга:</h2>
 
             <section style="background-color: burlywood; display: flex; justify-content: center; align-items: center;">
         
             
-                    
+                     
 
 
 
                 <div>
-                    <h4 style="color: brown;">Волжская ГЭС</h4>
+                    <h4>Волжская ГЭС:</h4>
                     <img src="/home/yuriy/Project VC/webHM/resurces/unnamed.webp" style="width: 100%; height: 500px";/>
                 </div>
 
                 <div>
-                    <h4 style="color: brown;">Жигулевская ГЭС</h4>
+                    <h4>Жигулевская ГЭС:</h4>
                     <img src="/home/yuriy/Project VC/webHM/resurces/unnamed (1).webp" style="width: 100%; height: 500px";/>
 
                 </div>
@@ -87,7 +88,7 @@
             </section>
 
             <section style="background-color: aqua;">
-                <h4 style="display: flex; justify-content: center; align-items: center";>Животный мир реки Волги очень разнообразен и меняется в зависимости от географической зоны — от лесов на севере до полупустынь и дельты на юге.</h4>
+                <h4>Животный мир реки Волги очень разнообразен и меняется в зависимости от географической зоны — от лесов на севере до полупустынь и дельты на юге.</h4>
                 <ul>
                     <li>Осетровые: русский осетр, белуга, севрюга, стерлядь и шип (многие занесены в Красную книгу).</li>
                     <li>Хищные рыбы: сом европейский, судак, берш, щука обыкновенная, окунь, жерех, налим.</li>
@@ -114,8 +115,8 @@
             <div>
                 Советуем так же посетить:
                 <br>
-                <a href="https://stalingrad-battle.ru/" target="_blank" style="display: block; margin-top: 5px;">Музей-заповедник «Сталинградская битва»</a>
-                <a href="https://myhistorypark.ru/" target="_blank">«Россия — Моя история» </a>
+                <a class="action" href="https://stalingrad-battle.ru/" target="_blank" style="display: block; margin-top: 5px;">Музей-заповедник «Сталинградская битва»</a>
+                <a class="action" href="https://myhistorypark.ru/" target="_blank">«Россия — Моя история» </a>
             </div>
 
 
